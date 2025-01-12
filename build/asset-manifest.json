@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Bread16/static/css/main.ceb868cb.css",
+    "main.js": "/Bread16/static/js/main.a16b9f68.js",
+    "static/media/win_video.mp4": "/Bread16/static/media/win_video.975531ce8699857b3d7d.mp4",
+    "static/media/back.jpg": "/Bread16/static/media/back.09ab4655fc438a065de7.jpg",
+    "static/media/background-1.jpg": "/Bread16/static/media/background-1.e0843d01f8dc802837bb.jpg",
+    "index.html": "/Bread16/index.html",
+    "main.ceb868cb.css.map": "/Bread16/static/css/main.ceb868cb.css.map",
+    "main.a16b9f68.js.map": "/Bread16/static/js/main.a16b9f68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ceb868cb.css",
+    "static/js/main.a16b9f68.js"
+  ]
+}
