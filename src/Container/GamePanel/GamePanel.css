@@ -1,0 +1,210 @@
+.game_panel_main_container{
+    width : 100% ;
+    height : 100vh; 
+    background-color: black;
+    position : relative ; 
+}
+
+.win{
+    position : absolute ; 
+    display : flex ; 
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    width : 100% ; 
+    height : 100% ; 
+    z-index: 100;
+    top : 0 ; 
+    left : 0 ;
+    color : purple;
+    gap : 3rem;
+    text-align: center;
+    padding : 3rem;
+    line-height: 1.3;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.fl{
+    display : flex ; 
+    gap : 20px;
+    flex-wrap : wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background_video{
+    position : absolute ; 
+    width : 100% ; 
+    height : 100% ; 
+    left : 0 ; 
+    top : 0 ; 
+    z-index : 1;
+}
+
+.z-index-inherit{
+    z-index : 100;
+}
+
+video{
+    width : 100% ; 
+    height: 100% ;
+    object-fit: cover;
+    opacity : 0.5;
+}
+.win h1{
+    font-size : min(5vw,50px) ; 
+    z-index : 90;
+}
+
+.win h2{
+    font-size : min(4vw,40px) ;
+    z-index : 90; 
+}
+
+.game_panel_container{
+    width : 100% ; 
+    height : 100% ; 
+    margin-inline : auto ; 
+    place-content: center ;
+    display : flex ; 
+    align-items: center ;
+    justify-content: center ; 
+    max-width : 1200px ; 
+    position : relative;
+    top : 0 ; 
+    left : 0 ;
+    background-image: url('../../images/back.jpg');
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+
+.game_board{
+    width : calc(100% - 30px) ; 
+    height : calc(100% - 30px) ;
+    position : relative ; 
+}
+
+#game_panel{
+    width : 100% ; 
+    height : 100% ; 
+    position: absolute;
+    left : 0 ; 
+    top : 0 ; 
+
+}
+
+.player1,.player2{
+    position: absolute ; 
+    font-size : 20px;
+    background-color: rgba(1, 1, 1, 0.663);
+    padding : 2px 10px ;
+    cursor : pointer;
+    z-index : 10;
+}
+.player1{
+    top : 0px ; 
+    left : 0px ; 
+    color : blue;
+    transform-origin: center;
+}
+
+p{
+    transition: .1s linear;
+}
+
+p.rotate{
+    transform : rotate(180deg);
+    transition: .1s linear;
+}
+
+.player2{
+    bottom : 0px ; 
+    left : 0px ;
+    color : red;
+}
+
+
+.player{
+    position : absolute ; 
+}
+
+.player{
+    z-index : 10 ;
+    width : 30px ; 
+    height : 30px ; 
+    transform : translate(-15px, -15px);
+    border-radius: 50%;
+    transform-origin: left center;
+    transition : .1s linear;
+    padding : 2px ;
+    border : 2px solid transparent;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width : 500px) {
+    .player{
+        width : 25px;
+        height : 25px;
+        transform : translate(-12.5px,-12.5px);
+    }
+
+    .player1,.player2{
+        font-size : 18px;
+        padding : 2px 4px;
+    }
+}
+
+.player.active{
+    box-shadow: 0 0 20px 10px white;
+    padding : 2px ;
+    transform-origin: left center;
+    transition : .1s linear;
+}
+
+.inner_div{
+    width : 100% ; 
+    height : 100% ;
+    border-radius: 50%;
+}
+
+.player.allactive .red{
+    cursor : pointer;
+    background-color: red;
+}
+
+.red{
+    background-color: rgba(251, 6, 6, 0.509);
+}
+
+.player.allactive .blue{
+    cursor : pointer;
+    background-color:  blue;
+}
+
+.blue{
+    background-color: rgba(3, 3, 255, 0.413);
+}
+
+.inactive{
+    background-color: rgba(255, 255, 255, 0.324);
+    cursor: pointer ;
+}
+
+.notactive{
+    background-color: transparent;
+}
+
+.player.active circle{
+       scale : 1.2 ; 
+}
+
+
+
+.player_1{
+    width : 100px ; 
+    height : 100px ; 
+    position: absolute;
+    background-color: black;
+    top : 0 ; 
+}
